@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+
+        android:id="@+id/nav_item_standard_deviation"
+        android:title="Standard Deviation" />
+
+    <item
+        android:id="@+id/nav_correlation"
+        android:title="Correlation Co-efficient" />
+
+    <item
+        android:id="@+id/nav_liner_regrassion"
+        android:title="Linear Regression Prediction" />
+    <item
+        android:id="@+id/nav_classification"
+        android:title="Quartiles and Classification" />
+
+
+</menu>

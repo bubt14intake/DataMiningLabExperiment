@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="standard_deviation_theory_1">
+
+        The standard deviation is the square root of variance. Thus the way we calculate standard deviation is very similar to the way we calculate variance.
+        In fact, to calculate standard deviation, we first need to calculate the variance, and then take its square root.\n\n
+
+        Standard Deviation Formula\n\n
+
+
+    </string>
+    <string name="standard_deviation_theory_2">
+
+
+            σ = standard deviation\n\n
+
+            xi = each value of dataset\n\n
+
+            x (with a bar over it) = the arithmetic mean of the data (This symbol will be indicated as mean from now)\n\n
+
+            N = the total number of data points\n\n
+
+            ∑ (xi - mean)^2 = The sum of (xi - mean)^2 for all datapoints\n\n
+
+    </string>
+
+
+</resources>

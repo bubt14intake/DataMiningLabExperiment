@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="regression_part_one">
+
+        Linear Regression  \n\n
+        In a cause and effect relationship, the independent variable is the cause, and the dependent variable is the effect. Least squares linear regression is a method for predicting the value of a dependent variable Y, based on the value of an independent variable X.
+        Standard Deviation Formula\n\n
+
+        Prerequisites for Regression\n
+
+        Simple linear regression is appropriate when the following conditions are satisfied.\n\n
+
+            ✓ The dependent variable Y has a linear relationship to the independent variable X. To check this, make sure that the XY scatterplot is linear and that the residual plot shows a random pattern.\n\n
+
+            ✓ For each value of X, the probability distribution of Y has the same standard deviation σ. When this condition is satisfied, the variability of the residuals will be relatively constant across all values of X, which is easily checked in a residual plot.\n\n
+
+        For any given value of X,\n
+
+            ✓ The Y values are independent, as indicated by a random pattern on the residual plot.\n\n
+            ✓ The Y values are roughly normally distributed (i.e., symmetric and unimodal).\n
+
+        The Least Squares Regression Line\n
+
+        Linear regression finds the straight line, called the least squares regression line or LSRL, that best represents observations in a bivariate data set. Suppose Y is a dependent variable, and X is an independent variable. The population regression line is:\n\n
+
+             Y = Β0 + Β1X\n\n
+
+        where,\n
+             ✓ Β0 is a constant,\n
+             ✓ Β1 is the regression coefficient,\n
+             ✓ X is the value of the independent variable, and\n
+             ✓ Y is the value of the dependent variable.\n\n
+
+        Given a random sample of observations, the population regression line is estimated by:\n\n
+
+             ✓ ŷ = b0 + b1x\n\n
+
+        where   ✓ b0 is a constant,\n
+                ✓ b1 is the regression coefficient,\n
+                ✓ x is the value of the independent variable,and\n
+                ✓ ŷ is the predicted value of the dependent variable.\n\n
+
+        How to Define a Regression Line\n
+
+        Normally, you will use a computational tool - a software package (e.g., Excel) or a graphing calculator - to find b0 and b1. You enter the X and Y values into your program or calculator, and the tool solves for each parameter.\n\n
+
+        In the unlikely event that you find yourself on a desert island without a computer or a graphing calculator, you can solve for b0 and b1 "by hand". Here are the equations.\n\n
+
+            ✓ b1 = Σ [ (xi - x)(yi - y) ] / Σ [ (xi - x)2]\n
+            ✓ b1 = r * (sy / sx)\n
+            ✓ b0 = y - b1 * x\n
+
+        where ✓ b0 is the constant in the regression equation,\n
+            ✓ b1 is the regression coefficient,\n
+            ✓ r is the correlation between x and y,
+            ✓ xi is the X value of observation i, yi is the Y value of observation i,\n
+            ✓ x is the mean of X, y is the mean of Y, sx is the standard deviation of X, and sy is the standard deviation of Y\n\n
+
+    </string>
+</resources>

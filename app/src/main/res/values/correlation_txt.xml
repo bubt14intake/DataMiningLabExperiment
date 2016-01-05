@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="txt_correaltion_1">
+        Correlation Co-efficient Definition:\n\n
+        A measure of the strength of linear association between two variables. Correlation will always between -1.0 and +1.0. If the correlation is positive, we have a positive relationship. If it is negative, the relationship is negative.
+    </string>
+
+    <string name="txt_correaltion_2">
+        Where,\n
+
+N =     N =Number of values or elements\n\n
+	    X = First Score\n\n
+        Y = Second Score\n\n
+        ΣXY = Sum of the product of first and Second Scores\n\n
+	    ΣX = Sum of First Scores\n\n
+	    ΣY = Sum of Second Scores\n\n
+        ΣX2 = Sum of square First Scores\n\n
+        ΣY2 = Sum of square Second Scores\n\n
+    </string>
+</resources>
