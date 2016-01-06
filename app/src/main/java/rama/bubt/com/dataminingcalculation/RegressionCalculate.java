@@ -20,7 +20,7 @@ import org.w3c.dom.Text;
 public class RegressionCalculate extends Fragment implements View.OnClickListener {
 
     private EditText etX1, etX2, etX3, etX4, etX5, etX6, etX7, etX8, etX9, etX10, etX11, etX12,
-            etY1, etY2, etY3, etY4, etY5, etY6, etY7, etY8, etY9, etY10, etY11, etY12;
+            etY1, etY2, etY3, etY4, etY5, etY6, etY7, etY8, etY9, etY10, etY11, etY12, etInputRegration;
     private TextView txtVisible1, txtVisible2, txtVisible3, txtVisible4, txtVisible5, txtVisible6, txtVisible7, txtVisible8,
             txtVisible9, txtVisible10, txtVisible11, txtRegression, txtTotalNumber, txtSloper, txtInceptor;
     private LinearLayout Ln1, Ln2, Ln3, Ln4, Ln5, Ln6, Ln7, Ln8, Ln9, Ln10, Ln11;
@@ -45,6 +45,7 @@ public class RegressionCalculate extends Fragment implements View.OnClickListene
         etX10 = (EditText) v.findViewById(R.id.etRX10);
         etX11 = (EditText) v.findViewById(R.id.etRX11);
         etX12 = (EditText) v.findViewById(R.id.etRX12);
+        etInputRegration = (EditText) v.findViewById(R.id.etInputRegration);
 
         etY1 = (EditText) v.findViewById(R.id.etRY1);
         etY2 = (EditText) v.findViewById(R.id.etRY2);
@@ -113,7 +114,7 @@ public class RegressionCalculate extends Fragment implements View.OnClickListene
                 values = new int[n][2];
                 String x1 = etX1.getText().toString();
                 String y1 = etY1.getText().toString();
-
+                String input = etInputRegration.getText().toString();
                 try {
                     values[0][0] = Integer.valueOf(x1);
                     values[0][1] = Integer.valueOf(y1);
@@ -193,8 +194,9 @@ public class RegressionCalculate extends Fragment implements View.OnClickListene
                     txtTotalNumber.setText(String.valueOf(values.length));
                     txtInceptor.setText(RegressionCalculation.getIntercept());
                     txtSloper.setText(RegressionCalculation.getSlope());
-                    txtRegression.setText(RegressionCalculation.getIntercept() +
-                            "+" + RegressionCalculation.getSlope() + "X");
+                    double tempR = Double.parseDouble(input);
+                    double r = Double.parseDouble(RegressionCalculation.getIntercept()) + (Double.parseDouble(RegressionCalculation.getSlope()) * tempR);
+                    txtRegression.setText(String.valueOf(r));
                 } catch (Exception e) {
                     DialogMessage.showDialog(getContext(), R.string.err_fields_empty
                     );

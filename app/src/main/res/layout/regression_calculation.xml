@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical">
 
 
@@ -11,21 +10,21 @@
         android:id="@+id/regrationScroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true"
-        >
+        android:fillViewport="true">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:gravity="center"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -34,10 +33,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:padding="7dp"
-                    android:text="Calculate Liner Regression Enter Values "
+                    android:padding="5dp"
+                    android:text="To Calculate Liner Regression Enter Values"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-
                     android:textColor="@color/black" />
 
                 <TextView
@@ -45,9 +43,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:padding="4dp"
+                    android:padding="2dp"
                     android:text="Enter number of X  and Y :"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorAccent" />
             </LinearLayout>
 
             <LinearLayout
@@ -63,7 +62,6 @@
                     android:layout_weight="2"
                     android:gravity="center"
                     android:text="X Value"
-
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="@color/black" />
 
@@ -654,6 +652,21 @@
 
             </LinearLayout>
 
+            <EditText
+                android:id="@+id/etInputRegration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/gray"
+                android:ems="8"
+                android:gravity="center"
+                android:hint="Enter Number "
+                android:inputType="number"
+                android:padding="7dp"
+                android:textColor="@color/black" />
+
             <Button
                 android:id="@+id/btnRegression"
                 android:layout_width="wrap_content"
@@ -661,7 +674,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/editText"
                 android:layout_gravity="left"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="5dp"
                 android:layout_marginTop="10dp"
                 android:onClick="regression"
                 android:text="Calculate" />
@@ -686,7 +699,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_weight="4"
+                    android:layout_weight="3"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="@color/black" />
 
@@ -712,7 +725,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_weight="4"
+                    android:layout_weight="3"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="@color/black" />
 
@@ -721,7 +734,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:orientation="horizontal"
                 android:padding="5dp">
 
@@ -739,7 +751,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_weight="4"
+                    android:layout_weight="3"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="@color/black" />
 
@@ -748,7 +760,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                android:layout_marginBottom="5dp"
                 android:orientation="horizontal"
                 android:padding="5dp">
 
@@ -766,7 +778,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_weight="4"
+                    android:layout_weight="3"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="@color/black" />
 

@@ -15,7 +15,7 @@ import com.rama.bubt.StandardDeviation;
 
 public class ClassificationCalculate extends Fragment {
     private EditText etYesValues, etNoValues, etInputValues;
-    private TextView numberOfYes, numberOfNo, avgY, avgN, tvStandardYes, tvStandardNo, tvParcentageYes,tvParcentageNo, tvOutput;
+    private TextView numberOfYes, numberOfNo, avgY, avgN, tvStandardYes, tvStandardNo, tvParcentageYes, tvParcentageNo, tvOutput;
 
     private Button btnClassification;
 
@@ -51,7 +51,7 @@ public class ClassificationCalculate extends Fragment {
                 try {
                     Classification.classificationDerivation(Yvalues);
                     avgY.setText(String.valueOf(Classification.getAvg()));
-                    tvStandardYes.setText("Yes : " + Classification.getStDeviation());
+                    tvStandardYes.setText(Classification.getStDeviation());
                     numberOfYes.setText(String.valueOf(Classification.getLength()));
                     double tempStandardY = Double.valueOf(Classification.getStDeviation());
                     double temAvgY = Double.valueOf(Classification.getAvg());
@@ -70,7 +70,7 @@ public class ClassificationCalculate extends Fragment {
                     Classification.probability(num, tempStandardY, tempStandardN, temAvgY, temAvgN, tempNY, tempNN);
 
                     tvParcentageYes.setText("% yes :" + Classification.getPy());
-                    tvParcentageNo.setText( "% no :" + Classification.getPn());
+                    tvParcentageNo.setText("% no :" + Classification.getPn());
                     tvOutput.setText(Classification.getByes());
 
                 } catch (Exception e) {

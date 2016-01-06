@@ -8,12 +8,15 @@
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
             android:orientation="vertical">
 
             <LinearLayout
@@ -55,7 +58,7 @@
                     android:id="@+id/etInputQuartileValues"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/gray"
+                    android:background="@color/pal"
                     android:ems="10"
                     android:gravity="center"
                     android:inputType="text"
@@ -85,7 +88,7 @@
                     android:id="@+id/txt5"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
+                    android:layout_weight="3"
                     android:text="Totals Number :"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="@color/black" />
@@ -111,7 +114,7 @@
                     android:id="@+id/txt1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
+                    android:layout_weight="3"
                     android:text="First Quartile :"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="@color/black" />
@@ -137,7 +140,7 @@
                     android:id="@+id/txt2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
+                    android:layout_weight="3"
                     android:text="Median :"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="@color/black" />
@@ -163,7 +166,7 @@
                     android:id="@+id/txt4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
+                    android:layout_weight="3"
                     android:text="Third Quartile :"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="@color/black" />
@@ -188,7 +191,7 @@
                     android:id="@+id/txt6"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
+                    android:layout_weight="3"
                     android:text="Interquartile range :"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="@color/black" />

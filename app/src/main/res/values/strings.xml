@@ -6,9 +6,9 @@
 
     <string name="action_settings">Settings</string>
     <string name="title_standard_deviation">Standard Deviation</string>
-    <string name="title_classification">Classification</string>
+    <string name="title_classification">Quatile and Classification</string>
     <string name="title_correlation_">Correlation Co-Effiecent</string>
     <string name="liner_regration">Liner Regression</string>
-    <string name="err_fields_empty">Require both filled</string>
-    <string name="valid_input">Plz valid input Integer separate by " , " </string>
+    <string name="err_fields_empty">Require both All filled</string>
+    <string name="valid_input">Plz.. input Integer number separate by " , " </string>
 </resources>
